@@ -1,0 +1,21 @@
+{
+    "name": "florian/8_guzzle",
+    "require": {
+      
+        "swiftmailer/swiftmailer": "^6.0",
+        "twig/twig": "^2.4",
+        "guzzlehttp/guzzle": "^6.3"
+
+    },
+    "autoload": {
+        "psr-4": {
+            "Dojo\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Florian Grandjean",
+            "email": "florian.pdf@gmail.com"
+        }
+    ]
+}

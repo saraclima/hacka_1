@@ -1,0 +1,53 @@
+{% extends 'user/layout_user.html.twig' %}
+
+{% block nav %}
+	{{ parent() }}
+
+{% endblock %}
+
+
+{% block body %}
+
+<h1>Map</h1>
+
+    <div id="map" style="width: 500px; height: 400px"></div>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDsBL7oBswxYKSnmKGuCWGmv5oiNSCumCk"></script>
+
+    <script type="text/javascript">
+        var myLatlng = new google.maps.LatLng(48.852937,2.364178);
+
+        var myOptions = {
+            zoom: 14,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: []
+        };
+
+        var map = new google.maps.Map(document.getElementById('map'), myOptions);
+        var marker = new google.maps.Marker({
+            position: myLatlng,
+            map: map,
+            title: "You are here!"
+        });
+    </script>
+
+
+
+
+{% endblock %}
+
+
+{% block css %}
+    
+{% endblock %}
+
+{% block popo %}
+    {{ parent() }}
+   <p> Hello je suis le user </p>
+{% endblock %}
+
+{% block lalala %}
+    {{ parent() }}
+   <p> Inserer les données recoltées </p>
+{% endblock %}
