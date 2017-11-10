@@ -1,5 +1,6 @@
 <?php
 
+include 'bdd_user_info.php';
 
 // Création d'une connection à la base de base de donnée
 $bdd = mysqli_connect(SERVER, USER, PASS, DB);
