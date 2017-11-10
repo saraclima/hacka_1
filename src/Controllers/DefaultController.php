@@ -18,4 +18,9 @@ class DefaultController extends Controller
 	public function result(){
 		return $this->twig->render('user/result.html.twig');
 	}
+
+	public function contact(){
+		return $this->twig->render('user/contact.html.twig');
+		
+	}
 }
