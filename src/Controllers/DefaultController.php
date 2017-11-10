@@ -43,7 +43,7 @@ class DefaultController extends Controller
         return $this->twig->render('user/home.html.twig');
     }
 
-  public function contact(){
+  	public function contact(){
 		return $this->twig->render('user/contact.html.twig');
 		
 	}
