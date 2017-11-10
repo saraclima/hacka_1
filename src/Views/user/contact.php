@@ -17,14 +17,7 @@
       <li class="nav-item">
         <a class="nav-link" href="index.php?section=contact">Contact</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">You shall not pass</a>
-      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
@@ -32,7 +25,7 @@
 
 <div class="container">
 
-    <h2 class="text-center">Contacte nous</h2>
+    <h2 class="text-center">CONTACTEZ NOUS</h2>
     
 
     <!-- On spécifie vers quelle url la donnée du formulaire doit etre envoyé -->
