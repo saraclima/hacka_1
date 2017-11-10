@@ -40,7 +40,7 @@ class DefaultController extends Controller
 
 // Send the message
         $mailer->send($message);
-        return $this->twig->render('user/home.html.twig');
+        
     }
 
   	public function contact(){
