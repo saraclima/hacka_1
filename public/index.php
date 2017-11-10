@@ -13,8 +13,6 @@ if (empty($_GET)){
 elseif ($_GET['section']=='add'){
 
 	echo $defaultController->result();
+	echo $defaultController->sendEmail();
 		
 	}
-elseif ($_GET['section']=='send'){
-    echo $defaultController->sendEmail();
-}
