@@ -10,7 +10,10 @@ if (empty($_GET)){
 	echo $defaultController->indexAction();
 }
 
-elseif ($_GET['section']='add'){
+elseif ($_GET['section']=='add'){
 	echo $defaultController->result();
 }
 
+elseif ($_GET['section']=='send'){
+    echo $defaultController->sendEmail();
+}
