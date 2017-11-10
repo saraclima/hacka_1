@@ -86,6 +86,13 @@ class ComposerStaticInit297456e004949cc293fa92950020b512
                 0 => __DIR__ . '/..' . '/twig/twig/lib',
             ),
         ),
+        'G' => 
+        array (
+            'GoogleMapsGeocoder' => 
+            array (
+                0 => __DIR__ . '/..' . '/jstayton/google-maps-geocoder/src',
+            ),
+        ),
         'D' => 
         array (
             'Doctrine\\Common\\Lexer\\' => 
