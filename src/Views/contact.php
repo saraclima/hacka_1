@@ -1,9 +1,5 @@
-{% extends 'base.html.twig' %}
-
-
-
-{% block nav %}
-	<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
+<?php ?>
+<link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
@@ -19,7 +15,7 @@
         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="contact.php">Contact</a>
+        <a class="nav-link" href="views/contact.php">Contact</a>
       </li>
       <li class="nav-item">
         <a class="nav-link disabled" href="#">You shall not pass</a>
@@ -33,21 +29,11 @@
 </nav>
 
 
+
+<div class="container">
+
+    <h2 class="text-center">Contacte nous</h2>
     
-{% endblock %}
-
-{% block body %}
-    
-    <div class="container">
-
-    <!-- Si certains champ du formulaire ne sont pas rempli, on affiche un message d'erreur -->
- <!--        <div class="alert alert-danger">
-            <strong>Danger!</strong>
-        </div> -->
-    <!-- End -->
-
-    <h2 class="text-center">Enregistre toi!</h2>
-    <p class="text-center"> Si tu veux connaitre les anniversaires de tes amis et les endroits pour faire la fête, inscris toi!</p>
 
     <!-- On spécifie vers quelle url la donnée du formulaire doit etre envoyé -->
     <form action="index.php?section=add" method="post">
@@ -61,29 +47,25 @@
             <label for="prenom">Prenom</label>
             <input name="prenom" type="text" class="form-control" id="prenom" placeholder="Prenom">
         </div>
-        <div class="form-group">
-            <label for="dateDeNaissance">Date de naissance (AAAA-MM-JJ)</label>
-            <input name="dateDeNaissance" type="date" class="form-control" id="dateDeNaissance">
-        </div>
-        <div class="form-group">
-            <label for="adresse">Adresse</label>
-            <input name="adresse" type="text" class="form-control" id="adresse" placeholder="Votre adresse">
-        </div>
+        
         <div class="form-group">
             <label for="adresseMail">Email</label>
             <input name="adresseMail" type="text" class="form-control" id="adresseMail" placeholder="Votre mail">
+        </div>
+        <div class="form-group">
+            <label for="message">Message</label>
+            <input name="message" type="textarea" class="form-control" id="message" placeholder="Votre message">
         </div>
         <div class="text-center">
             <button type="submit" class="btn btn-success">Envoyer</button>
         </div>
     </form>
 </div>
-    
 
-{% endblock %}
 
-{% block footer %}
-    <table>
+
+
+   <table>
       <tr align="center">
         <td>
          
@@ -93,4 +75,11 @@
        
     </tr>
   </table>
-{% endblock %}
+
+
+
+    
+    
+    
+
+
