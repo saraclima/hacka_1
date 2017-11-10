@@ -17,14 +17,7 @@
       <li class="nav-item">
         <a class="nav-link" href="contact.php">Contact</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">You shall not pass</a>
-      </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
   </div>
 </nav>
 
@@ -41,16 +34,16 @@
     
         <div class="form-group">
             <label for="nom">Nom</label>
-            <input name="nom" type="text" class="form-control" id="nom" placeholder="Nom">
+            <input name="nom" type="text" class="form-control" id="nom" placeholder="*Nom">
         </div>
         <div class="form-group">
             <label for="prenom">Prenom</label>
-            <input name="prenom" type="text" class="form-control" id="prenom" placeholder="Prenom">
+            <input name="prenom" type="text" class="form-control" id="prenom" placeholder="*Prenom">
         </div>
         
         <div class="form-group">
             <label for="adresseMail">Email</label>
-            <input name="adresseMail" type="text" class="form-control" id="adresseMail" placeholder="Votre mail">
+            <input name="adresseMail" type="text" class="form-control" id="adresseMail" placeholder="*Votre mail">
         </div>
         <div class="form-group">
             <label for="message">Message</label>
